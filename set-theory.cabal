@@ -4,17 +4,19 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 4768017330afa5169b1067c427e0cc22c0b59062fb35cc23ba7cf9d30abc2c04
+-- hash: a572fdbbd030f0a30a1d3990cdf1efaf7991361ab4f7978c53165b455edd6bff
 
 name:           set-theory
 version:        0.1.0.0
+synopsis:       A simple library for providing set theory to haskell datatypes
 description:    Please see the README on GitHub at <https://github.com/lyncmi07/SetTheory#readme>
+category:       Mathematics
 homepage:       https://github.com/lyncmi07/SetTheory#readme
 bug-reports:    https://github.com/lyncmi07/SetTheory/issues
 author:         Michael Lynch
 maintainer:     lyncmi07@yahoo.co.uk
 copyright:      Copyright (c) 2019 Michael Lynch
-license:        LGPL-3.0
+license:        LGPL-3
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
@@ -27,14 +29,15 @@ source-repository head
 
 library
   exposed-modules:
+      Data.Set.InSetTheory
       Data.Set.SetTheory
-      Lib
   other-modules:
       Paths_set_theory
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
+    , containers
   default-language: Haskell2010
 
 test-suite set-theory-test
