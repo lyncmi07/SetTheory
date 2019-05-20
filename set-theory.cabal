@@ -4,17 +4,17 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: df00a7687053729b59f8c4eb922d0f96599c8aa907a9b8ef2a1e414206e7cb12
+-- hash: 88d20b40763714f4b17ce2c7955b22725294dc32b597c7d8e5e52f9ab27fd758
 
 name:           set-theory
 version:        0.1.0.0
-description:    Please see the README on GitHub at <https://github.com/githubuser/set-theory#readme>
-homepage:       https://github.com/githubuser/set-theory#readme
-bug-reports:    https://github.com/githubuser/set-theory/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2019 Author name here
-license:        BSD3
+description:    Please see the README on GitHub at <https://github.com/lyncmi07/SetTheory#readme>
+homepage:       https://github.com/lyncmi07/SetTheory#readme
+bug-reports:    https://github.com/lyncmi07/SetTheory/issues
+author:         Michael Lynch
+maintainer:     lyncmi07@yahoo.co.uk
+copyright:      Copyright (c) 2019 Michael Lynch
+license:        LGPL-3.0
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
@@ -23,10 +23,11 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/set-theory
+  location: https://github.com/lyncmi07/SetTheory
 
 library
   exposed-modules:
+      Data.Set.SetTheory
       Lib
   other-modules:
       Paths_set_theory
