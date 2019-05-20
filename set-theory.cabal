@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 88d20b40763714f4b17ce2c7955b22725294dc32b597c7d8e5e52f9ab27fd758
+-- hash: 4768017330afa5169b1067c427e0cc22c0b59062fb35cc23ba7cf9d30abc2c04
 
 name:           set-theory
 version:        0.1.0.0
@@ -35,18 +35,6 @@ library
       src
   build-depends:
       base >=4.7 && <5
-  default-language: Haskell2010
-
-executable set-theory-exe
-  main-is: Main.hs
-  other-modules:
-      Paths_set_theory
-  hs-source-dirs:
-      app
-  ghc-options: -threaded -rtsopts -with-rtsopts=-N
-  build-depends:
-      base >=4.7 && <5
-    , set-theory
   default-language: Haskell2010
 
 test-suite set-theory-test
